@@ -1,0 +1,20 @@
+body {
+  background-color: lavender;
+}
+
+img {
+  width: 100%;
+}
+
+.question-container {
+  background-color: white;
+  padding: 20px;
+}
+
+.question {
+  font-family: Arial;
+}
+
+.answer {
+  font-size: 50px;
+}
