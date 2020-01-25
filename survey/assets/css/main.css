@@ -1,6 +1,9 @@
 body {
   background-color: lavender;
   padding: 30px;
+  font-family: 'Roboto', sans-serif;
+  display: grid;
+  grid-template-columns: 20% 70% 10%;
 }
 
 img {
@@ -8,15 +11,19 @@ img {
 }
 
 .question-container {
+  grid-column-start: 2;
   background-color: white;
-  padding: 20px;
+  border-radius: 20px;
+  padding: 30px;
+  margin: 20px;
+  display: inline-block;
 }
 
 .question {
-  font-family: Arial;
+  font-weight: 300;
 }
 
 .answer {
   font-size: 50px;
-  padding: 20px;
+  padding-top: 20px;
 }
