@@ -1,5 +1,6 @@
 body {
   background-color: lavender;
+  padding: 30px;
 }
 
 img {
@@ -17,4 +18,5 @@ img {
 
 .answer {
   font-size: 50px;
+  padding: 20px;
 }
