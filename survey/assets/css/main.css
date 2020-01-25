@@ -10,6 +10,14 @@ img {
   width: 100%;
 }
 
+ul, ol {
+  margin: 0;
+}
+
+ol {
+  padding-left: 60px;
+}
+
 .question-container {
   grid-column-start: 2;
   background-color: white;
