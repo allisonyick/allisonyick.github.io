@@ -29,8 +29,10 @@ p {
 .link {
   font-size: 20px;
   padding: 10px;
-  color: white;
-  background-color: black;
+  /*color: white;
+  background-color: black;*/
+  color: black;
+  background-color: lavender;
   border-radius: 20px;
   outline-color: black;
   text-decoration: none;
