@@ -1,10 +1,33 @@
 body {
-  padding: 50px;
+  padding: 80px;
+  display: grid;
+  grid-template-columns: 30% 20% 50%;
   font-family: Arial;
 }
 
+p {
+  font-weight: 300;
+}
+
+.left {
+  grid-column-start: 1;
+}
+
+.middle {
+  grid-column-start: 2;
+  padding-right: 20px;
+  float: right;
+}
+
+.right {
+  grid-column-start: 3;
+  font-weight: 300;
+}
+
 .link {
-  font-size: 50px;
+  font-size: 20px;
   color: red;
   text-decoration: none;
+  padding-top: 30px;
+  float: left;
 }
