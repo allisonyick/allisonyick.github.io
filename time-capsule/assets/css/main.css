@@ -6,9 +6,11 @@ html {
 }
 
 body {
-  background: linear-gradient(213deg, #6b5d8c, #596b8a, #273752, #859dc6);
-  -webkit-animation: gradual 10s ease infinite;
-  animation: gradual 10s ease infinite;
+  background: linear-gradient(339deg, #dbe8e5, #9ec5cc, #a0a9bd, #eee9c5) 20% 100% / 100% 200%;
+
+  -webkit-animation: gradual 15s ease infinite;
+  -moz-animation: gradual 15s ease infinite;
+  animation: gradual 15s ease infinite;
 
   margin: 0;
   height: 100%;
@@ -32,16 +34,17 @@ img {
 }
 
 .bottom-1 {
-/*  max-width: 10%;*/
+  max-width: 50%;
   position: absolute;
-  top: 50vh;
+  top: 20vh;
+  border-radius: 50%;
 }
 
 .top-1 {
-/*  max-width: 10%;*/
-  /*opacity: 50%;*/
+  max-width: 50%;
   position: absolute;
-  top: 50vh;
+  top: 20vh;
+  border-radius: 50%;
   animation: fade ease 3s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -52,17 +55,18 @@ img {
   position: absolute;
   top: 0vh;
   left: 20vw;
+  border-radius: 50%;
 }
 
 .top-2 {
 /*  max-width: 10%;*/
-  /*opacity: 50%;*/
   position: absolute;
   top: 0vh;
   left: 20vw;
   animation: fade ease 10s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  border-radius: 50%;
 }
 
 .bottom-3 {
@@ -70,17 +74,18 @@ img {
   position: absolute;
   top: 60vh;
   left: 50vw;
+  border-radius: 50%;
 }
 
 .top-3 {
 /*  max-width: 10%;*/
-  /*opacity: 50%;*/
   position: absolute;
   top: 60vh;
   left: 50vw;
   animation: fade ease 2s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  border-radius: 50%;
 }
 
 .bottom-4 {
@@ -89,11 +94,11 @@ img {
   top: 20vh;
   left: 100vw;
   z-index: 1;
+  border-radius: 50%;
 }
 
 .top-4 {
 /*  max-width: 10%;*/
-  /*opacity: 50%;*/
   position: absolute;
   top: 20vh;
   left: 100vw;
@@ -101,6 +106,7 @@ img {
   animation: fade ease 1s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  border-radius: 50%;
 }
 
 .bottom-5 {
@@ -108,17 +114,18 @@ img {
   position: absolute;
   top: 0vh;
   left: 120vw;
+  border-radius: 50%;
 }
 
 .top-5 {
 /*  max-width: 10%;*/
-  /*opacity: 50%;*/
   position: absolute;
   top: 0vh;
   left: 120vw;
   animation: fade ease 3s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  border-radius: 50%;
 }
 
 .bottom-6 {
@@ -127,11 +134,11 @@ img {
   top: 10vh;
   left: 160vw;
   z-index: 1;
+  border-radius: 50%;
 }
 
 .top-6 {
 /*  max-width: 10%;*/
-  /*opacity: 50%;*/
   position: absolute;
   top: 10vh;
   left: 160vw;
@@ -139,6 +146,7 @@ img {
   animation: fade ease 0.5s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  border-radius: 50%;
 }
 
 .bottom-7 {
@@ -146,17 +154,18 @@ img {
   position: absolute;
   top: 60vh;
   left: 175vw;
+  border-radius: 50%;
 }
 
 .top-7 {
   max-width: 35%;
-  /*opacity: 50%;*/
   position: absolute;
   top: 60vh;
   left: 175vw;
   animation: fade ease 10s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  border-radius: 50%;
 }
 
 .bottom-8 {
@@ -164,17 +173,18 @@ img {
   position: absolute;
   top: 30vh;
   left: 200vw;
+  border-radius: 50%;
 }
 
 .top-8 {
   max-width: 20%;
-  /*opacity: 50%;*/
   position: absolute;
   top: 30vh;
   left: 200vw;
   animation: fade ease 2s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  border-radius: 50%;
 }
 
 .bottom-9 {
@@ -183,11 +193,11 @@ img {
   top: 0vh;
   left: 240vw;
   z-index: 1;
+  border-radius: 50%;
 }
 
 .top-9 {
   max-width: 15%;
-  /*opacity: 50%;*/
   position: absolute;
   top: 0vh;
   left: 240vw;
@@ -195,6 +205,7 @@ img {
   animation: fade ease 1s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  border-radius: 50%;
 }
 
 .bottom-10 {
@@ -202,17 +213,18 @@ img {
   position: absolute;
   top: 0vh;
   left: 270vw;
+  border-radius: 50%;
 }
 
 .top-10 {
 /*  max-width: 10%;*/
-  /*opacity: 50%;*/
   position: absolute;
   top: 0vh;
   left: 270vw;
   animation: fade ease 3s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  border-radius: 50%;
 }
 
 @keyframes slideshow {
@@ -226,14 +238,19 @@ img {
 }
 
 @-webkit-keyframes gradual {
-    0%{background-position:50% 0%}
-    50%{background-position:51% 100%}
-    100%{background-position:50% 0%}
+    0%{background-position:94% 0%}
+    50%{background-position:7% 100%}
+    100%{background-position:94% 0%}
+}
+@-moz-keyframes gradual {
+    0%{background-position:94% 0%}
+    50%{background-position:7% 100%}
+    100%{background-position:94% 0%}
 }
 @keyframes gradual {
-    0%{background-position:50% 0%}
-    50%{background-position:51% 100%}
-    100%{background-position:50% 0%}
+    0%{background-position:94% 0%}
+    50%{background-position:7% 100%}
+    100%{background-position:94% 0%}
 }
 
 /*.container {
