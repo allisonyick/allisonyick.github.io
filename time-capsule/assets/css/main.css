@@ -17,6 +17,37 @@ body {
   width: 100%;
 }
 
+p {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  vertical-align: middle;
+  text-decoration: none;
+  color: black;
+  background-color: lavender;
+  padding: 1%;
+  border-radius: 20px;
+  display: table;
+}
+
+/*.text {
+  margin: 0 auto;
+  position: relative;
+  padding-top: 20px;
+  padding-left: 20px;
+  animation: fade ease;
+}
+
+.box {
+  position: absolute; 
+  width: 200px;
+  height: 60px; 
+}
+
+.box:hover .overlay{
+  opacity: 1;
+}*/
+
 .slideshow {
   position: relative;
   overflow: hidden;
@@ -267,6 +298,12 @@ img {
   0% {opacity: 0;}
   100% {opacity: 1;}
 }
+
+@keyframes fadeOut{
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
 
 @-webkit-keyframes gradual {
     0%{background-position:94% 0%}
