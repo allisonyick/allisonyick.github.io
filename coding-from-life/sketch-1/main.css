@@ -21,7 +21,7 @@ body {
 
 .cover-front {
   background-color: #F0E5E4;
-  width: 115px;
+  width: 110px;
   height: 180px;
   transform: skewY(10deg);
   position: absolute;
@@ -32,7 +32,7 @@ body {
 
 .page1 {
   background-color: white;
-  width: 115px;
+  width: 113px;
   height: 172px;
   transform: skewY(2deg);
   position: absolute;
@@ -43,7 +43,7 @@ body {
 
 .page2 {
   background-color: white;
-  width: 115px;
+  width: 113px;
   height: 172px;
   transform: skewY(4deg);
   position: absolute;
@@ -54,7 +54,7 @@ body {
 
 .page3 {
   background-color: white;
-  width: 115px;
+  width: 113px;
   height: 172px;
   transform: skewY(2deg);
   position: absolute;
@@ -87,14 +87,13 @@ body {
 }
 
 .flower {
-  width: 12px;
-  height: 50px;
+  width: 10px;
+  height: 70px;
   background: green;
-  transform: skew(20deg, 40deg);
   position: absolute;
-  top: -30px;
-  left: 34px;
-  z-index: 2;
+  top: -70px;
+  left: 40px;
+  z-index: 1;
 }
 
 .book1-cover {
