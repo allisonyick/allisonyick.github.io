@@ -1,0 +1,158 @@
+/*
+  Coding from Life – Sketch 1: fixed layout
+
+  For sketch 1 you'll be positioning elements relative to an element with a fixed
+  width and height. For this sketch you can position elements by using pixel values.
+*/
+
+body {
+  background-color: black;
+}
+
+.frame {
+  width: 1000px;
+  height: 600px;
+  background: white;
+  margin: 30px auto;
+  position: relative;
+}
+
+/* Your CSS goes here */
+
+.cover-front {
+  background-color: #F0E5E4;
+  width: 115px;
+  height: 180px;
+  transform: skewY(10deg);
+  position: absolute;
+  top: 190px;
+  left: 170px;
+  z-index: 3;
+}
+
+.page1 {
+  background-color: white;
+  width: 115px;
+  height: 172px;
+  transform: skewY(2deg);
+  position: absolute;
+  top: 190px;
+  left: 172px;
+  z-index: 2;
+}
+
+.page2 {
+  background-color: white;
+  width: 115px;
+  height: 172px;
+  transform: skewY(4deg);
+  position: absolute;
+  top: 190px;
+  left: 172px;
+  z-index: 2;
+}
+
+.page3 {
+  background-color: white;
+  width: 115px;
+  height: 172px;
+  transform: skewY(2deg);
+  position: absolute;
+  top: 190px;
+  left: 172px;
+  z-index: 2;
+}
+
+.cover-back {
+  background-color: #D9CFCE;
+  width: 122px;
+  height: 180px;
+  position: absolute;
+  top: 180px;
+  left: 170px;
+  z-index: 1;
+}
+
+.vase {
+  background-color: #F6EFE6;
+  width: 100px;
+  height: 120px;
+  border-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  position: absolute;
+  top: 210px;
+  left: 410px;
+  z-index: 3;
+}
+
+.flower {
+  width: 12px;
+  height: 50px;
+  background: green;
+  transform: skew(20deg, 40deg);
+  position: absolute;
+  top: -30px;
+  left: 34px;
+  z-index: 2;
+}
+
+.book1-cover {
+  background-color: #F7E5BE;
+  width: 170px;
+  height: 25px;
+  transform: skewX(70deg);
+  position: absolute;
+  top: 320px;
+  left: 393px;
+  z-index: 1;
+}
+
+.book1-spine {
+  background-color: #E0C2A8;
+  width: 170px;
+  height: 20px;
+  position: absolute;
+  top: 345px;
+  left: 425px;
+  z-index: 1;
+}
+
+.title {
+  font-size: 10px;
+  font-family: sans-serif;
+  position: absolute;
+  top: 3px;
+  padding-left: 10px;
+}
+
+.book1-page {
+  background-color: white;
+  width: 65px;
+  height: 20px;
+  transform: skewY(20deg);
+  position: absolute;
+  top: 332px;
+  left: 360px;
+  z-index: 1;
+}
+
+.table-top {
+  background-color: #F5D2C9;
+  width: 800px;
+  height: 120px;
+  position: absolute;
+  bottom: 180px;
+  left: 100px;
+  z-index: 0;
+}
+
+.table-side {
+  background-color: #E0BBAF;
+  width: 800px;
+  height: 180px;
+  position: absolute;
+  bottom: 0px;
+  left: 100px;
+  z-index: 0;
+}
