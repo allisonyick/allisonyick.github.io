@@ -1,0 +1,55 @@
+body {
+  width: 100%
+  height: 100%;
+  padding: 5vw;
+
+  font-family: Roboto, sans-serif;
+  display: grid;
+  grid-template: 20% 80% / 30% 20% 20% 30%;
+}
+
+.left {
+  padding-right: 3vw;
+}
+
+h1 {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+p {
+  font-size: 2vw;
+}
+
+#description {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  font-size: 1vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+.comp1, .blue {
+  color: #79ADE8;
+}
+
+.comp2, .purple {
+  color: #BFA4D9;
+}
+
+.students-1 {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+.students-2 {
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+
+.students-3 {
+  grid-column-start: 4;
+  grid-row-start: 2;
+}
