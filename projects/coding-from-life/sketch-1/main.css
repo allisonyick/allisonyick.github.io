@@ -77,23 +77,21 @@ body {
   background-color: #F6EFE6;
   width: 100px;
   height: 120px;
-  border-radius: 100px;
-  border-bottom-left-radius: 100px;
-  border-bottom-right-radius: 100px;
+  border-radius: 50% 50% 30% 30% / 70% 70% 30% 30%;
   position: absolute;
-  top: 210px;
-  left: 410px;
+  top: 215px;
+  left: 530px;
   z-index: 3;
 }
 
-.flower {
-  width: 10px;
+.flower1 {
+  width: 5px;
   height: 70px;
   background: green;
   position: absolute;
-  top: -70px;
-  left: 40px;
-  z-index: 1;
+  top: -69px;
+  left: 45px;
+  z-index: 0;
 }
 
 .book1-cover {
@@ -103,8 +101,8 @@ body {
   transform: skewX(70deg);
   position: absolute;
   top: 320px;
-  left: 393px;
-  z-index: 1;
+  left: 500px;
+  z-index: 2;
 }
 
 .book1-spine {
@@ -113,8 +111,8 @@ body {
   height: 20px;
   position: absolute;
   top: 345px;
-  left: 425px;
-  z-index: 1;
+  left: 535px;
+  z-index: 2;
 }
 
 .title {
@@ -131,8 +129,40 @@ body {
   height: 20px;
   transform: skewY(20deg);
   position: absolute;
-  top: 332px;
-  left: 360px;
+  top: 333px;
+  left: 470px;
+  z-index: 2;
+}
+
+.book2-cover {
+  background-color: #B4DBCB;
+  width: 124px;
+  height: 56px;
+  transform: skewX(70deg);
+  position: absolute;
+  top: 309px;
+  left: 486px;
+  z-index: 1;
+}
+
+.book2-page2 {
+  background-color: #f0f0f0;
+  width: 154px;
+  height: 42px;
+  transform: skewY(20deg);
+  position: absolute;
+  top: 337px;
+  left: 409px;
+  z-index: 1;
+}
+
+.book2-page {
+  background-color: #f0f0f0;
+  width: 124px;
+  height: 42px;
+  position: absolute;
+  top: 365px;
+  left: 563px;
   z-index: 1;
 }
 
