@@ -1,5 +1,5 @@
 body {
-  padding: 80px;
+  padding: 5vw;
   display: grid;
   grid-template-rows: 50% 50%;
   grid-template-columns: 30% 20% 50%;
@@ -16,32 +16,32 @@ p {
 
 .middle {
   grid-column-start: 2;
-  padding-right: 20px;
+  padding-right: 2vw;
   float: right;
 }
 
 .right {
   grid-column-start: 3;
   font-weight: 300;
-  padding-top: 20px;
+  padding-top: 1vw;
 }
 
 .lab {
   grid-column-start: 3;
   grid-row-start: 2;
-  padding-top: 65px;
+  padding-top: 2.6vw;
 }
 
 .link {
-  font-size: 20px;
+  font-size: 1.2vw;
   font-weight: 300;
-  padding: 10px;
-  margin-right: 10px;
+  padding: 0.6vw;
+  margin-right: 0.5vw;
   /*color: white;
   background-color: black;*/
   color: black;
   background-color: lavender;
-  border-radius: 20px;
+  border-radius: 2vw;
   outline-color: black;
   text-decoration: none;
   float: left;
