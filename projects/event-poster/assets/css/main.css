@@ -3,26 +3,25 @@ body {
   height: 100%;
   margin: 0;
   overflow: hidden;
+  display: flex;
 
   background-color: #C5DCE6;
 }
 
-.row {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding: 1vw;
+.column {
+  width: 20%;
+  padding: 3vw;
 }
 
-.col {
-  width: 20%;
-  padding: 0.5vw;
+.right {
+  text-align: right;
+}
+
+.middle {
+  width: 60%;
 }
 
 .container {
-  display: flex;
-  height: 70vh;
   overflow: visible;
 }
 
@@ -34,7 +33,17 @@ body {
   color: floralwhite;
   margin: auto;
   position: relative;
-  left: 20vw;
+  top: 13vw;
+  z-index: 3;
+  overflow: visible;
+}
+
+#subtitle {
+  font-family: franklin-gothic-urw;
+  font-size: 1vw;
+  text-align: center;
+  color: #93ACB8;
+  letter-spacing: 0.2vw;
   z-index: 3;
 }
 
@@ -53,12 +62,18 @@ body {
 
 .address {
   font-weight: 500;
+  font-size: 1.5vw;
+}
+
+.dated {
+  font-size: 2vw;
+  font-weight: 500;
 }
 
 .coffee-cup {
   position: relative;
-  top: 3vw;
-  right: 11.5vw;
+  bottom: 10vw;
+  left: 19vw;
   z-index: 1;
 
   animation: rotateOutUpLeft 5s ease infinite;
@@ -91,6 +106,7 @@ body {
   border-radius: 10vw;
   border-top-left-radius: 0vw;
   border-top-right-radius: 0vw;
+  z-index: 1;
 }
 
 .handle {
@@ -99,8 +115,8 @@ body {
 
   background: transparent;
   position: relative;
-  bottom: 25vw;
-  left: 16.5vw;
+  bottom: 24vw;
+  left: 24.5vw;
   border: 2vw solid #947970;
   border-top-right-radius: 5vw;
   border-bottom-right-radius: 8vw;
