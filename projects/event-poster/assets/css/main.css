@@ -187,8 +187,7 @@ body {
     height: 60vw;
   }
   .handle {
-    position: relative;
-    left: 15rem;
+    display: none;
   }
 
   .sponsor, .address {
