@@ -96,7 +96,7 @@ body {
   height: 25vw;
 
   transform: translate(-50%, -50%);
-  border: 2vw solid #947970;
+  border: 2vw solid #E8AD8B;
   border-top: 2vw solid transparent;
   border-radius: 15vw;
   border-top-left-radius: 2vw;
@@ -128,7 +128,7 @@ body {
   position: relative;
   bottom: 24vw;
   left: 24.5vw;
-  border: 2vw solid #947970;
+  border: 2vw solid #E8AD8B;
   border-top-right-radius: 5vw;
   border-bottom-right-radius: 8vw;
   overflow: visible;
