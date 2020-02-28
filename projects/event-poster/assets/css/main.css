@@ -13,6 +13,10 @@ body {
   padding: 3vw;
 }
 
+.col {
+  height: 50%;
+}
+
 .right {
   text-align: right;
 }
@@ -68,6 +72,13 @@ body {
 .dated {
   font-size: 2vw;
   font-weight: 500;
+  position: relative;
+  top: 12vw;
+}
+
+.dates {
+  position: relative;
+  top: 4.5vw;
 }
 
 .coffee-cup {
@@ -142,47 +153,53 @@ body {
 
 @media (max-width: 700px) {
   body {
-    overflow: visible;
+    overflow-y: visible;
+    display: flex;
+    flex-direction: column;
   }
-  .sponsor {
-    padding-top: 5vw;
+  .column, .middle {
+    width: 100%;
   }
-  .title {
-    font-size: 3rem;
-    justify-content: center;
-  }
-  .container {
-    height: 60vw;
-  }
-  .coffee-cup {
+
+  .right {
     position: relative;
-    top: 10vw;
+    right: 2rem;
   }
+
   .title {
-    font-size: 15vw;
-    line-height: 5rem;
+    font-size: 13vw;
+    line-height: 4rem;
+    justify-content: center;
+    order: 1;
   }
   #small-title {
     font-size: 8vw;
+    order: 1;
   }
+  #subtitle {
+    font-size: 1rem;
+    order: 1;
+  }
+
+  .container {
+    height: 60vw;
+  }
+  .handle {
+    position: relative;
+    left: 15rem;
+  }
+
+  .dated {
+    font-size: 2rem;
+  }
+
   .sponsor, .address {
     color: #E89789;
-    order: 1;
-    padding-bottom: 2rem;
-  }
-  .date {
-    padding-bottom: 2rem;
   }
   .details {
     font-size: 1rem;
   }
-  .row {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .col {
-    width: 100%;
-  }
+
   @keyframes {
     from {
       -webkit-transform-origin: left bottom;
