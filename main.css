@@ -29,7 +29,6 @@ p {
 .lab {
   grid-column-start: 3;
   grid-row-start: 2;
-  padding-top: 1.7vw;
 }
 
 .link {
