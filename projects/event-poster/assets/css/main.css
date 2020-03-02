@@ -4,6 +4,7 @@ body {
   margin: 0;
   overflow: hidden;
   display: flex;
+  cursor: url(coffee-favicon.png), auto;
 
   background-color: #C5DCE6;
 }
@@ -170,7 +171,7 @@ body {
 
   .title {
     font-size: 13vw;
-    line-height: 4rem;
+    line-height: 5rem;
     justify-content: center;
     order: 1;
   }
