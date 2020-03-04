@@ -376,3 +376,80 @@ img {
     box-sizing: border-box;
   }
 }
+
+@media print {
+  body {
+    overflow: visible;
+  }
+  img {
+    width: 60%;
+    position: relative;
+    bottom: 170vw;
+  }
+  .title {
+    font-size: 2rem;
+    position: relative:;
+  }
+  .h2 {
+    font-size: 0.9rem;
+  }
+  #col {
+    width: 100%;
+  }
+  .long {
+    position: relative;
+    bottom: 0;
+  }
+  .medium-long {
+    position: relative;
+    bottom: 0;
+  }
+  .intro {
+    padding-top: 18rem;
+    font-size: 1.8rem;
+  }
+  .col-1 {
+    width: 45%;
+  }
+  .col-2 {
+    width: 20%;
+  }
+  .back {
+    font-size: 2rem;
+    padding-left: 1rem;
+  }
+  .next {
+    font-size: 2rem;
+  }
+  .arrow, .next-arrow {
+    display: none;
+  }
+  .question {
+    font-size: 1rem;
+    padding-bottom: 3vw;
+  }
+  .answer {
+    font-size: 1rem;
+  }
+  .question-container {
+    padding: 2vw;
+    position: relative;
+  }
+  .head, .head-2, .head-3, .head-4, .question-number {
+    display: none;
+  }
+  .well {
+    position: relative;
+    overflow: visible;
+    transition: 1s cubic-bezier(0.5, 0, 0.5, 1);
+  }
+  .panel {
+    position: relative;
+    height: 100vh;
+    overflow: visible;
+    font-size: 10vmin;
+    padding: 10vw 10vw;
+    margin: auto;
+    box-sizing: border-box;
+  }
+}
