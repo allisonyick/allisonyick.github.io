@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>General Thoughts | Asian Representation in Media</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+<body>
+  <a class="back" href="index.html">
+    <img class="arrow" src="assets/imgs/back-arrow.png"/>Back
+  </a>
+
+  <div class="well" id="well">
+    
+    <div class="panel">
+      <div class="question">
+        Thoughts on Parasite’s clean sweep at the Oscars this year, winning Best Picture, Best Directing, Best International Feature Film, and Best Original Screenplay?
+      </div>
+      <div class="answer">
+        I’m so glad that Parasite was able to achieve everything it has so far. Aside from being a Korean/Asian film, I think Parasite’s achievements are a feat because the film itself requires audiences to look at every little detail and thought that was put into it. The plot that Parasite has is one that is hard to bring onto the screen without making it look like your typical thriller film. Instead of using straightforward/conventional ways to narrate the plot, the direction of the film makes use of even the smallest nuances in order to tie the story together, which is hard to do successfully especially knowing that not everyone looks out for these details in films. 
+      </div>
+
+    </div>
+
+    <div class="panel medium-long">
+      <div class="question">
+        Do you think there is a difference between the way western films are written versus foreign films? (i.e. in the concept of their films, cinematography, etc.)
+      </div>
+      <div class="answer">
+        When it comes down to it, I don’t think there’s a difference between how Western films are written when compared to foreign films. No film can escape having to incorporate a normative plot or narrative element. The difference between the Western film industry versus other industries is that when it comes to being “internationally recognized”, the former is gets produced knowing it is already part of a bigger, more dominant genre/industry, while the latter gets produced knowing that in order to be recognized, it still has to become a “breakthrough” film despite being successful within their own region. This way of thinking obviously changes the plots are executed into film in different regions. When foreign films are presented to the Western audience, one of the most prominent responses is that seeing a foreign plot is a unique and interesting perspective. All plots and all stories from all over the world are interesting and unique, it’s just that some plots (aka the mainstream Western film industry’s) have been normalized and idealized.  
+      </div>
+    </div>
+
+  </div>
+</body>
+<script type="text/javascript">
+  (function() {
+  "use strict";
+  /*[pan and well CSS scrolls]*/
+  var pnls = document.querySelectorAll('.panel').length,
+    scdir, hold = false;
+
+  function _scrollY(obj) {
+    var slength, plength, pan, step = 100,
+      vh = window.innerHeight / 100,
+      vmin = Math.min(window.innerHeight, window.innerWidth) / 100;
+    if ((this !== undefined && this.id === 'well') || (obj !== undefined && obj.id === 'well')) {
+      pan = this || obj;
+      plength = parseInt(pan.offsetHeight / vh);
+    }
+    if (pan === undefined) {
+      return;
+    }
+    plength = plength || parseInt(pan.offsetHeight / vmin);
+    slength = parseInt(pan.style.transform.replace('translateY(', ''));
+    if (scdir === 'up' && Math.abs(slength) < (plength - plength / pnls)) {
+      slength = slength - step;
+    } else if (scdir === 'down' && slength < 0) {
+      slength = slength + step;
+    } else if (scdir === 'top') {
+      slength = 0;
+    }
+    if (hold === false) {
+      hold = true;
+      pan.style.transform = 'translateY(' + slength + 'vh)';
+      setTimeout(function() {
+        hold = false;
+      }, 1000);
+    }
+    console.log(scdir + ':' + slength + ':' + plength + ':' + (plength - plength / pnls));
+  }
+  /*[swipe detection on touchscreen devices]*/
+  function _swipe(obj) {
+    var swdir,
+      sX,
+      sY,
+      dX,
+      dY,
+      threshold = 100,
+      /*[min distance traveled to be considered swipe]*/
+      slack = 50,
+      /*[max distance allowed at the same time in perpendicular direction]*/
+      alT = 500,
+      /*[max time allowed to travel that distance]*/
+      elT, /*[elapsed time]*/
+      stT; /*[start time]*/
+    obj.addEventListener('touchstart', function(e) {
+      var tchs = e.changedTouches[0];
+      swdir = 'none';
+      sX = tchs.pageX;
+      sY = tchs.pageY;
+      stT = new Date().getTime();
+      //e.preventDefault();
+    }, false);
+
+    obj.addEventListener('touchmove', function(e) {
+      e.preventDefault(); /*[prevent scrolling when inside DIV]*/
+    }, false);
+
+    obj.addEventListener('touchend', function(e) {
+      var tchs = e.changedTouches[0];
+      dX = tchs.pageX - sX;
+      dY = tchs.pageY - sY;
+      elT = new Date().getTime() - stT;
+      if (elT <= alT) {
+        if (Math.abs(dX) >= threshold && Math.abs(dY) <= slack) {
+          swdir = (dX < 0) ? 'left' : 'right';
+        } else if (Math.abs(dY) >= threshold && Math.abs(dX) <= slack) {
+          swdir = (dY < 0) ? 'up' : 'down';
+        }
+        if (obj.id === 'well') {
+          if (swdir === 'up') {
+            scdir = swdir;
+            _scrollY(obj);
+          } else if (swdir === 'down' && obj.style.transform !== 'translateY(0)') {
+            scdir = swdir;
+            _scrollY(obj);
+
+          }
+          e.stopPropagation();
+        }
+      }
+    }, false);
+  }
+  /*[assignments]*/
+  var well = document.getElementById('well');
+  well.style.transform = 'translateY(0)';
+  well.addEventListener('wheel', function(e) {
+    if (e.deltaY < 0) {
+      scdir = 'down';
+    }
+    if (e.deltaY > 0) {
+      scdir = 'up';
+    }
+    e.stopPropagation();
+  });
+  well.addEventListener('wheel', _scrollY);
+  _swipe(well);
+  var tops = document.querySelectorAll('.top');
+  for (var i = 0; i < tops.length; i++) {
+    tops[i].addEventListener('click', function() {
+      scdir = 'top';
+      _scrollY(well);
+    });
+  }
+})();
+</script>
+</html>

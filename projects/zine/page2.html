@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portrayal of Asians in Film/Media | Asian Representation in Media</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+<body>
+  <a class="back" href="index.html">
+    <img class="arrow" src="assets/imgs/back-arrow.png"/>Back
+  </a>
+
+  <div class="well" id="well">
+    
+    <div class="panel long">
+      <div class="question">
+        In an interview with TIME, Awkwafina discusses the representation of asians in films, oftentime not relating to their actual experiences, but rather servicing white stories or leaning on stereotypes. What do you think was the goal in writing this story or producing the film for Crazy Rich Asians?
+      </div>
+      <div class="answer">
+        Crazy Rich Asians revolves around a hyper-specific group of people, so it by no means has the goal of representing Asians. The story revolves around people who live in their own world—Kwan describes them* as being “richer than god”—so I think the goal is simply to bring the stories of these people and link it back to everyone else’s world or the “real world”. 
+        <br><br>
+        Another thing Crazy Rich Asians does is that it shows off successful (East) Asians in different industries. In Asia, entrepreneurs and tycoons are held in high regard, and more often than not, they are household names. Every region has them, but Western names always seem to be held at an even higher regard than others. Crazy Rich Asians puts these Asian names into an even higher pedestal and regards the success of Asian names.
+      </div>
+
+    </div>
+
+    <div class="panel">
+      <div class="question">
+        How do you think Kevin Kwan, the author of the book Crazy Rich Asians, wanted Asians to be seen/portrayed?
+      </div>
+      <div class="answer">
+        I don’t think Kwan intended to portray Asians in a specific way, since he wrote about this super-specific group of people. I think Kwan just wanted to show that Asians can be just as, or even more, successful than their Western counterparts, and that it is a matter of who is being recognized and who isn’t.
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="question">
+        Have you read the book Crazy Rich Asians? If yes, did the director convey the story the way you imagined?
+      </div>
+      <div class="answer">
+        I did read the book, and it was brought into film in the way I expected. While reading the book, I imagined this surreal world for the extremely rich that is pretty much entirely separate from how the rest of Asia/the world lives, and the movie definitely was able to capture that.
+      </div>
+    </div>
+
+  </div>
+</body>
+<script type="text/javascript">
+  (function() {
+  "use strict";
+  /*[pan and well CSS scrolls]*/
+  var pnls = document.querySelectorAll('.panel').length,
+    scdir, hold = false;
+
+  function _scrollY(obj) {
+    var slength, plength, pan, step = 100,
+      vh = window.innerHeight / 100,
+      vmin = Math.min(window.innerHeight, window.innerWidth) / 100;
+    if ((this !== undefined && this.id === 'well') || (obj !== undefined && obj.id === 'well')) {
+      pan = this || obj;
+      plength = parseInt(pan.offsetHeight / vh);
+    }
+    if (pan === undefined) {
+      return;
+    }
+    plength = plength || parseInt(pan.offsetHeight / vmin);
+    slength = parseInt(pan.style.transform.replace('translateY(', ''));
+    if (scdir === 'up' && Math.abs(slength) < (plength - plength / pnls)) {
+      slength = slength - step;
+    } else if (scdir === 'down' && slength < 0) {
+      slength = slength + step;
+    } else if (scdir === 'top') {
+      slength = 0;
+    }
+    if (hold === false) {
+      hold = true;
+      pan.style.transform = 'translateY(' + slength + 'vh)';
+      setTimeout(function() {
+        hold = false;
+      }, 1000);
+    }
+    console.log(scdir + ':' + slength + ':' + plength + ':' + (plength - plength / pnls));
+  }
+  /*[swipe detection on touchscreen devices]*/
+  function _swipe(obj) {
+    var swdir,
+      sX,
+      sY,
+      dX,
+      dY,
+      threshold = 100,
+      /*[min distance traveled to be considered swipe]*/
+      slack = 50,
+      /*[max distance allowed at the same time in perpendicular direction]*/
+      alT = 500,
+      /*[max time allowed to travel that distance]*/
+      elT, /*[elapsed time]*/
+      stT; /*[start time]*/
+    obj.addEventListener('touchstart', function(e) {
+      var tchs = e.changedTouches[0];
+      swdir = 'none';
+      sX = tchs.pageX;
+      sY = tchs.pageY;
+      stT = new Date().getTime();
+      //e.preventDefault();
+    }, false);
+
+    obj.addEventListener('touchmove', function(e) {
+      e.preventDefault(); /*[prevent scrolling when inside DIV]*/
+    }, false);
+
+    obj.addEventListener('touchend', function(e) {
+      var tchs = e.changedTouches[0];
+      dX = tchs.pageX - sX;
+      dY = tchs.pageY - sY;
+      elT = new Date().getTime() - stT;
+      if (elT <= alT) {
+        if (Math.abs(dX) >= threshold && Math.abs(dY) <= slack) {
+          swdir = (dX < 0) ? 'left' : 'right';
+        } else if (Math.abs(dY) >= threshold && Math.abs(dX) <= slack) {
+          swdir = (dY < 0) ? 'up' : 'down';
+        }
+        if (obj.id === 'well') {
+          if (swdir === 'up') {
+            scdir = swdir;
+            _scrollY(obj);
+          } else if (swdir === 'down' && obj.style.transform !== 'translateY(0)') {
+            scdir = swdir;
+            _scrollY(obj);
+
+          }
+          e.stopPropagation();
+        }
+      }
+    }, false);
+  }
+  /*[assignments]*/
+  var well = document.getElementById('well');
+  well.style.transform = 'translateY(0)';
+  well.addEventListener('wheel', function(e) {
+    if (e.deltaY < 0) {
+      scdir = 'down';
+    }
+    if (e.deltaY > 0) {
+      scdir = 'up';
+    }
+    e.stopPropagation();
+  });
+  well.addEventListener('wheel', _scrollY);
+  _swipe(well);
+  var tops = document.querySelectorAll('.top');
+  for (var i = 0; i < tops.length; i++) {
+    tops[i].addEventListener('click', function() {
+      scdir = 'top';
+      _scrollY(well);
+    });
+  }
+})();
+</script>
+</html>
