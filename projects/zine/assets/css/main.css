@@ -428,29 +428,29 @@ img {
     bottom: 170vw;
   }
   .title {
-    font-size: 2rem;
+    font-size: 5rem;
     position: relative:;
   }
   .intro {
     padding-top: 18rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   .question {
-    font-size: 1rem;
+    font-size: 2rem;
     padding-bottom: 3vw;
   }
   .answer {
-    font-size: 1rem;
+    font-size: 2rem;
   }
   .head, .head-2, .head-3, .head-4, .question-number {
     display: none;
   }
   .panel {
     position: relative;
-    height: 100vh;
+    height: 50vh;
     overflow: visible;
     font-size: 10vmin;
-    padding: 10vw 10vw;
+    padding: 10vw 5vw;
     margin: auto;
     box-sizing: border-box;
   }
