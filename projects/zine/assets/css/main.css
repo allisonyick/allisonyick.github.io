@@ -734,12 +734,14 @@ img {
     font-size: 3.5rem;
     position: relative;
     margin-top: 2vh;
-    color: black;
+    color: floralwhite;
+    background-color: black;
   }
   .intro {
-    padding-top: 18rem;
-    font-size: 2rem;
-    color: black;
+    padding-top: 10rem;
+    font-size: 3.2rem;
+    color: floralwhite;
+    background-color: black;
   }
   .glitch {
     content: 'Representation';
