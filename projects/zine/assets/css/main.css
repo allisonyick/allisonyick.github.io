@@ -727,7 +727,7 @@ img {
   img {
     width: 60%;
     position: relative;
-    bottom: 170vw;
+    bottom: 180vw;
     z-index: -1;
   }
   .title {
