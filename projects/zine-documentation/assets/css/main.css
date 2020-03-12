@@ -50,6 +50,7 @@ body {
   letter-spacing: 0.2vw;
   color: floralwhite;
   position: relative;
+  font-weight: 300;
 }
 
 .link {
@@ -69,6 +70,7 @@ body {
   padding: 16vw;
   position: relative;
   text-align: justify;
+  font-weight: 300;
 }
 
 .concept {
