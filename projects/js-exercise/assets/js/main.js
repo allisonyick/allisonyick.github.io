@@ -130,3 +130,10 @@ for ( var i = 0; i < favourites.length; i++ ) {
 
 // STEP 12
 
+for (var i = 0; i < favourites.length; i++) {
+  console.log(favourites[i]);
+
+  for (var x = 0; x < favourites[i].length; x++) {
+    console.log(favourites[i][x]);
+  }
+}
