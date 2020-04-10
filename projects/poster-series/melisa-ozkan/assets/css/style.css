@@ -9,11 +9,6 @@
 }
 
 @font-face {
-  font-family: '_AktivGroteskBold';
-  src: url('fonts/_AktivGroteskBold.ttf');
-}
-
-@font-face {
   font-family: 'IBMPlexSansVar-Roman';
   src: url('fonts/IBMPlexSansVar-Roman.ttf');
 }
@@ -63,7 +58,7 @@ body {
   text-align: left;
   padding: 3vw;
   position: absolute;
-  top: 20vw;
+  top: 10vw;
   line-height: 13vw;
   z-index: 3;
 
@@ -79,19 +74,20 @@ body {
   text-align: end;
   padding: 3vw;
   position: relative;
-  top: 17vw;
+  top: 5vw;
   z-index: 2;
 }
 
 .next {
   color: floralwhite;
-  font-family: SpaceGrotesk-Bold;
-  font-size: 3vw;
+  font-family: IBMPlexSansVar-Roman;
+  text-transform: uppercase;
+  font-size: 2vw;
   text-align: right;
   align-self: flex-end;
   padding: 3vw;
   position: relative;
-  top: 20vw;
+  top: 5vw;
   z-index: 2;
 }
 
