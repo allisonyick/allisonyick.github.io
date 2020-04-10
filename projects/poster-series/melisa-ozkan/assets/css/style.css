@@ -76,6 +76,7 @@ body {
   position: relative;
   top: 5vw;
   z-index: 2;
+  animation: resize 2s infinite alternate;
 }
 
 .next {
@@ -101,18 +102,19 @@ a {
 
 @keyframes anim {
   from {
-    font-variation-settings: "wght" 400, "wdth" 100;
+    font-variation-settings: "wght" 100, "wdth" 85;
   }
   to {
     font-variation-settings: "wght" 700, "wdth" 100;
   }
 }
-
-/*@keyframes resize {
+/*
+@keyframes resize {
   0% {
     font-size: default;
   }
   100% {
-    font-size: 15vw;
+    font-size: 6vw;
   }
-}*/
+}
+*/
