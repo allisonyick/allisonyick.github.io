@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'SpaceGrotesk-Bold';
+  src: url('fonts/SpaceGrotesk-Bold.woff2') format('woff2'),
+       url('fonts/SpaceGrotesk-Bold.woff') format('woff');
+  font-style: normal;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  height: 1024px;
+  align-items: stretch;
+}
+
+.box {
+  width: 100%;
+}
+
+.box-1 {
+  background-color: black;
+}
+
+.box-2 {
+  background-color: pink;
+}
+
+.box-3 {
+  background-color: black;
+}
+
+.name {
+  color: floralwhite;
+  font-family: SpaceGrotesk-Bold;
+  font-size: 10vw;
+  line-height: 8vw;
+  text-align: center;
+  padding: 1vw;
+  margin-top: 20vw;
+  line-height: 10vw;
+  animation: resize 3s infinite alternate;
+}
+
+.info {
+  color: floralwhite;
+  font-family: SpaceGrotesk-Bold;
+  font-size: 5vw;
+  line-height: 5vw;
+  text-align: end;
+  padding: 1vw;
+  position: relative;
+  top: 15vw;
+}
+
+.shape-1 {
+  width: 5vw;
+  height: 5vw;
+  background-color: floralwhite;
+  border-radius: 50vw;
+  padding: 5vw;
+  margin: 5vw;
+
+  position: relative;
+  top: 20vw;
+
+  animation: bounce 2s ease-in infinite;
+}
+
+@keyframes resize {
+  0% {
+    font-size: default;
+  }
+  100% {
+    font-size: 15vw;
+  }
+}
+
+@keyframes bounce {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+
+  40%,
+  43% {
+    transform: translate3d(0, -30vw, 0);
+  }
+
+  70% {
+    transform: translate3d(0, -15vw, 0);
+  }
+
+  90% {
+    transform: translate3d(0, -4vw, 0);
+  }
+}
