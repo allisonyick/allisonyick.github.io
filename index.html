@@ -112,11 +112,22 @@
       });
     });
 
+    // $("a").hover(function(){
+    //   console.log("hehehe");
+    //   $("h2").css("color", "IndianRed");
+    //   }, function(){
+    //   $("h2").css("color", "floralwhite");
+    // });
+
     $("a").hover(function(){
       console.log("hehehe");
-      $("h2").css("color", "IndianRed");
+      $("body").css("background-color", "floralwhite");
+      $(this).css("color", "IndianRed");
+      $("h2").css("display", "none");
       }, function(){
-      $("h2").css("color", "floralwhite");
+      $("body").css("background-color", "black");
+      $(this).css("color", "floralwhite");
+      $("h2").css("display", "block");
     });
 
     $(document).mousemove(function(e){

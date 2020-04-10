@@ -3,11 +3,12 @@
 <head>
   <title>Visiting Alumni | Melisa Ozkan</title>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
   <div class="container">
     <div class="box-1 box">
-      <div class="name">
+      <div data-splitting class="name">
         Melisa Ozkan
       </div>
     </div>
@@ -26,5 +27,30 @@
       </div>
     </div>
   </div>
+
+  <!-- JQUERY -->
+
+  <script type="text/javascript">
+
+    $(function(){
+
+      // $(".box-2").click(function() {
+      //    var someText = "ATTEND THIS EVENT";
+      //    var newDiv = $(".box-2").append(someText).click(function () {console.log("click!"); });
+      //    $(this).append(newDiv);
+      // });
+
+      $(".box-2").click(function() {
+         var shape = "ATTEND THIS EVENT";
+         var newDiv = $(".box-2").append(".shape-1").click(function () {console.log("click!"); });
+         $(this).append(newDiv);
+      });
+
+    });
+
+    
+    
+
+  </script>
 </body>
 </html>
