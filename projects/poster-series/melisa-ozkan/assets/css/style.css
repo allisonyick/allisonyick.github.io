@@ -103,9 +103,11 @@ a {
 @keyframes anim {
   from {
     font-variation-settings: "wght" 100, "wdth" 85;
+    color: white;
   }
   to {
     font-variation-settings: "wght" 700, "wdth" 100;
+    color: #5DD4A8;
   }
 }
 /*

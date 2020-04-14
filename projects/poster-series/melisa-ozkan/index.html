@@ -42,10 +42,12 @@
       $("a").hover(function(){
       console.log("CHECK OUT THE NEXT EVENT");
       $(".box").css("background-color", "floralwhite");
+      $(".name").css("opacity", "0");
       $(".bg-move").css("opacity", "0%");
       $(this).css("color", "black");
       }, function(){
       $(".box").css("background-color", "black");
+      $(".name").css("opacity", "1");
       $(".bg-move").css("opacity", "50%");
       $(this).css("color", "floralwhite");
       });
