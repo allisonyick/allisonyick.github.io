@@ -1,0 +1,145 @@
+@font-face {
+  font-family: 'GT-America-Regular';
+  src: url('fonts/GT-America-Regular.woff2') format('woff2'),
+       url('fonts/GT-America-Regular.woff') format('woff');
+  font-style: normal;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+
+  font-family: GT-America-Regular, sans-serif;
+}
+
+video, img {
+  max-width: 100%;
+}
+
+.container {
+  display: flex;
+  margin: 0;
+}
+
+.col {
+  width: 100%;
+}
+
+.left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: floralwhite;
+}
+
+.right {
+  width: 50%;
+}
+
+.row {
+  height: 100%;
+}
+
+.row-1 {
+  height: 10%;
+}
+
+.row-2 {
+  height: 80%;
+}
+
+.box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+}
+
+.row {
+  height: 100%;
+}
+
+.top {
+  height: 10%;
+  align-self: flex-start;
+}
+
+.middle {
+  height: 10%;
+  align-self: center;
+}
+
+.bottom {
+  height: 10%;
+  align-self: baseline;
+}
+
+
+
+.instruction-head {
+  background-color: white;
+  position: sticky;
+  top: 0;
+}
+
+.title {
+  font-size: 3vw;
+}
+
+.heading {
+  font-size: 2vw;
+}
+
+.name {
+  color: lightgrey;
+  font-size: 2vw;
+  text-align: right;
+}
+
+.body-text {
+  font-size: 5vw;
+  padding: 1vw;
+  line-height: 5vw;
+}
+
+.desc {
+  font-size: 2vw;
+  padding: 1vw;
+}
+
+.homepage-links {
+  font-size: 3vw;
+  line-height: 5vw;
+  align-self: center;
+}
+
+.next {
+  width: 0;
+  height: 0;
+  border-bottom: 5vw solid red;
+  border-left: 5vw solid transparent;
+  z-index: 3;
+}
+
+/*.preview {
+  padding-top: 8vw;
+  padding-bottom: 7vw;
+}*/
+
+/* LINKS */
+
+.view {
+  color: black;
+  border: 0.1vw solid floralwhite;
+  border-radius: 50vw;
+  padding: 0.5vw;
+}
+
+.switch-view:hover, .selected {
+  border: 0.1vw solid black;
+  border-radius: 50vw;
+  padding: 0.5vw;
+}

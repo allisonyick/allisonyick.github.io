@@ -1,3 +1,8 @@
+$(document).mousemove(function(e){
+      console.log("follow me!");
+      $(".pointer").css({left:e.pageX, top:e.pageY});
+    })
+
 $(".preview").removeAttr("controls");
 
 $(".preview").hover(function(event) {
@@ -6,4 +11,16 @@ $(".preview").hover(function(event) {
     } else if(event.type === "mouseleave") {
         $(this).removeAttr("controls");
     }
+});
+
+$(".next").hover(function(){
+  console.log("let's try something new!");
+  $(".body-text").css("color", "white");
+  $(".heading").css("color", "white");
+  $(".name").css("color", "white");
+  $(this).css("cursor", "pointer");
+  }, function(){
+  $(".body-text").css("color", "black");
+  $(".heading").css("color", "black");
+  $(".name").css("color", "lightgrey");
 });
