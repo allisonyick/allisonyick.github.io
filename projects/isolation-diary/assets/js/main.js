@@ -24,3 +24,7 @@ $(".next").hover(function(){
   $(".heading").css("color", "black");
   $(".name").css("color", "lightgrey");
 });
+
+var randomDay = Math.round(Math.random() * 14); 
+var randomNextPage = 'day-' + randomDay + '.html';
+$('.next-day-link').attr('href', randomNextPage);
