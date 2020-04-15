@@ -44,7 +44,11 @@ body {
   width: 100%;
 }
 
-img {
+link {
+  display: block;
+}
+
+.project-img {
   max-width: 50%;
   position: absolute;
   top: 15%;
@@ -101,7 +105,7 @@ h2 {
   display: none;
 }
 
-a:hover + img{
+a:hover + .project-img {
   opacity: 1;
 }
 
