@@ -206,14 +206,14 @@ a {
 
 .view {
   color: black;
-  border: 0.1vw solid snow;
+  border: 0.2vw solid snow;
   border-radius: 50vw;
   padding: 0.5vw;
   transition: 0.5s ease-in-out;
 }
 
 .switch-view:hover, .selected {
-  border: 0.1vw solid black;
+  border: 0.2vw solid black;
   border-radius: 50vw;
   padding: 0.5vw;
   transition: 0.5s ease-in-out;
