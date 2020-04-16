@@ -1,5 +1,6 @@
 html {
   cursor: none;
+  cursor: url(dot.png), auto;
 }
 
 body {
@@ -7,21 +8,6 @@ body {
   padding: 0;
   overflow: hidden;
   background-color: black;
-}
-
-.pointer {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 2vw;
-  height: 2vw;
-  background: floralwhite;
-  border: 0.3vw solid IndianRed;
-  border-radius: 50%;
-  pointer-events: none;
-  box-sizing: border-box;
-  z-index: 6;
 }
 
 .wrapper {
