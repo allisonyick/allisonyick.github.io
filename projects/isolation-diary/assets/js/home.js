@@ -30,3 +30,7 @@ $(".title").hover(function(){
   $(".left").css("background-color", "white");
   $(this).css("color", "black");
 });
+
+var randomDay = Math.round(Math.random() * 13); 
+var randomNextPage = 'day-' + randomDay + '.html';
+$('.next-day-link').attr('href', randomNextPage);

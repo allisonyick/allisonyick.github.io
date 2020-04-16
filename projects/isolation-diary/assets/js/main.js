@@ -18,13 +18,15 @@ $(".next").hover(function(){
   $(".body-text").css("color", "white");
   $(".heading").css("color", "white");
   $(".name").css("color", "white");
+  $(".link").css("color", "white");
   $(this).css("cursor", "pointer");
   }, function(){
   $(".body-text").css("color", "black");
   $(".heading").css("color", "black");
   $(".name").css("color", "lightgrey");
+  $(".link").css("color", "IndianRed");
 });
 
-var randomDay = Math.round(Math.random() * 14); 
+var randomDay = Math.round(Math.random() * 13); 
 var randomNextPage = 'day-' + randomDay + '.html';
 $('.next-day-link').attr('href', randomNextPage);

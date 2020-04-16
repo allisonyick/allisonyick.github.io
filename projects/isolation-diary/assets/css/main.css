@@ -5,6 +5,12 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'graphik';
+  src: url('fonts/graphik.woff2') format('woff2'),
+       url('fonts/graphik.woff') format('woff');
+  font-style: normal;
+}
 
 * {
   margin: 0;
@@ -24,7 +30,7 @@ body {
   margin: 0;
   overflow-x: hidden;
 
-  font-family: GT-America-Regular, sans-serif;
+  font-family: graphik, sans-serif;
 }
 
 /* VIDEO AND IMAGES */
@@ -36,6 +42,7 @@ video, img {
 
 .archive-img {
   opacity: 0.3;
+  display: table-cell;
 }
 
 .archive-img:hover {
@@ -81,6 +88,10 @@ video, img {
   width: 50%;
 }
 
+.col {
+  width: 100%;
+}
+
 .title-head {
   padding: 2vw;
   position: sticky;
@@ -98,8 +109,13 @@ video, img {
   margin-bottom: 3vw;
 }
 
+.link {
+  color: IndianRed;
+  cursor: pointer;
+}
+
 .title {
-  font-size: 3vw;
+  font-size: 2vw;
   letter-spacing: 0.5vw;
 }
 
@@ -137,6 +153,7 @@ video, img {
   bottom: 2vw;
   margin-left: 80%;
   margin-right: 10%;
+  cursor: pointer;
 }
 
 .random {
@@ -146,6 +163,7 @@ video, img {
   position: relative;
   top: 4vw;
   right: 3vw;
+  cursor: pointer;
 }
 
 /* LINKS */
@@ -154,6 +172,7 @@ video, img {
   font-size: 2vw;
   line-height: 5vw;
   text-align: center;
+  cursor: pointer;
 }
 
 .add {
