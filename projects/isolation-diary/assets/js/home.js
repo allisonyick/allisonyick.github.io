@@ -34,3 +34,6 @@ $(".title").hover(function(){
 var randomDay = Math.round(Math.random() * 13); 
 var randomNextPage = 'day-' + randomDay + '.html';
 $('.next-day-link').attr('href', randomNextPage);
+
+// var html = 'day-' + randomDay + '.html';
+// $('html').attr('href', html);
