@@ -43,10 +43,12 @@ video, img {
 .archive-img {
   opacity: 0.3;
   display: table-cell;
+  transition: 1s ease-in-out;
 }
 
 .archive-img:hover {
   opacity: 1;
+  transition: 1s ease-in-out;
 }
 
 .preview {
@@ -98,6 +100,17 @@ video, img {
   top: 0;
 }
 
+.title {
+  font-size: 2vw;
+  letter-spacing: 0.5vw;
+  transition: 1s ease-in-out;
+}
+
+.title:hover {
+  text-decoration: underline;
+  transition: 1s ease-in-out;
+}
+
 .instruction-head {
   background-color: white;
   padding: 2vw;
@@ -112,11 +125,6 @@ video, img {
 .link {
   color: IndianRed;
   cursor: pointer;
-}
-
-.title {
-  font-size: 2vw;
-  letter-spacing: 0.5vw;
 }
 
 .heading {
@@ -201,14 +209,12 @@ a {
   border: 0.1vw solid snow;
   border-radius: 50vw;
   padding: 0.5vw;
+  transition: 0.5s ease-in-out;
 }
 
 .switch-view:hover, .selected {
   border: 0.1vw solid black;
   border-radius: 50vw;
   padding: 0.5vw;
-}
-
-.title:hover {
-  text-decoration: underline;
+  transition: 0.5s ease-in-out;
 }

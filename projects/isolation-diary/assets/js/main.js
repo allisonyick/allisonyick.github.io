@@ -15,16 +15,26 @@ $(".preview").hover(function(event) {
 
 $(".next").hover(function(){
   console.log("let's try something new!");
-  $(".body-text").css("color", "white");
-  $(".heading").css("color", "white");
-  $(".name").css("color", "white");
-  $(".link").css("color", "white");
+  $(".random").css("color", "black");
+  $(".random").css("transition", "0.5s ease-in-out");
+  $(this).css("border-bottom", "7vw solid snow");
   $(this).css("cursor", "pointer");
+  $(this).css("transition", "0.5s ease-in-out");
   }, function(){
-  $(".body-text").css("color", "black");
-  $(".heading").css("color", "black");
-  $(".name").css("color", "lightgrey");
-  $(".link").css("color", "IndianRed");
+  $(".random").css("color", "white");
+  $(this).css("border-bottom", "7vw solid black");
+});
+
+$(".next").hover(function(){
+  console.log("let's try something new!");
+  $(".random").css("color", "black");
+  $(".random").css("transition", "0.5s ease-in-out");
+  $(this).css("border-bottom", "7vw solid snow");
+  $(this).css("cursor", "pointer");
+  $(this).css("transition", "0.5s ease-in-out");
+  }, function(){
+  $(".random").css("color", "white");
+  $(this).css("border-bottom", "7vw solid black");
 });
 
 var randomDay = Math.round(Math.random() * 13); 
