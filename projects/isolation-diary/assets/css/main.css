@@ -82,8 +82,12 @@ video, img {
 .left {
   width: 50%;
   height: 100vh;
-  background-color: black;
+  background-color: snow;
   border-right: 0.2vw solid black;
+}
+
+.video-play {
+  background-color: black;
 }
 
 .right {
@@ -95,6 +99,7 @@ video, img {
 }
 
 .title-head {
+  color: black;
   padding: 2vw;
   position: sticky;
   top: 0;
@@ -102,6 +107,7 @@ video, img {
 
 .title {
   font-size: 2vw;
+  color: black;
   letter-spacing: 0.5vw;
   transition: 1s ease-in-out;
 }
@@ -136,7 +142,7 @@ video, img {
   font-size: 2vw;
   text-align: right;
   position: relative; 
-  top: -2.5vw;
+  top: -2vw;
 }
 
 .body-text {
