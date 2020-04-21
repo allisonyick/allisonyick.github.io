@@ -37,6 +37,20 @@ $(".next").hover(function(){
   $(this).css("border-bottom", "7vw solid black");
 });
 
+// var backgroundChange = css
+
+$('.preview').on('click', function(){
+  console.log("enjoy the video!");
+  // $(this)[0].play();
+  $('video').trigger('play');
+  $('.left').css('background-color', 'black');
+  $('.left').css('transition', '1s ease-in-out');
+  $('.view').css('border', '0.2vw solid black');
+  $('.selected').css('border', '0.2vw solid snow');
+  $('a').css('color', 'snow');
+  $('.toggle').css('color', 'snow');
+});
+
 var randomDay = Math.round(Math.random() * 13); 
 var randomNextPage = 'day-' + randomDay + '.html';
 $('.next-day-link').attr('href', randomNextPage);
