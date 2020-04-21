@@ -45,6 +45,7 @@ $('video').on('click', function(){
   $('.selected').css('border', '0.2vw solid snow');
   $('a').css('color', 'snow');
   $('.toggle').css('color', 'snow');
+  $('.note').css('display', 'none');
 });
 
 var randomDay = Math.round(Math.random() * 13); 
