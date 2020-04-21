@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Visiting Alumni | Melisa Ozkan</title>
+  <title>Visiting Alumni | Madison Bozinoff</title>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
@@ -43,13 +43,15 @@
       console.log("CHECK OUT THE NEXT EVENT");
       $(".box").css("background-color", "floralwhite");
       $(".name").css("opacity", "0");
+      $(".info").css("opacity", "0");
       $(".bg-move").css("opacity", "0%");
-      $(this).css("color", "black");
+      $(".box").css("transition", "1s ease-in-out");
       }, function(){
-      $(".box").css("background-color", "black");
+      $(".box").css("background-color", "white");
       $(".name").css("opacity", "1");
+      $(".info").css("opacity", "1");
       $(".bg-move").css("opacity", "50%");
-      $(this).css("color", "floralwhite");
+      $(".box").css("transition", "1s ease-in-out");
       });
 
       var windowWidth = $(window).width();

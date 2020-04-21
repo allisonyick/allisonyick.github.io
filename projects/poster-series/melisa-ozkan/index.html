@@ -45,11 +45,13 @@
       $(".name").css("opacity", "0");
       $(".bg-move").css("opacity", "0%");
       $(this).css("color", "black");
+      $(".box").css("transition", "1s ease-in-out");
       }, function(){
       $(".box").css("background-color", "black");
       $(".name").css("opacity", "1");
       $(".bg-move").css("opacity", "50%");
       $(this).css("color", "floralwhite");
+      $(".box").css("transition", "1s ease-in-out");
       });
 
       var windowWidth = $(window).width();
