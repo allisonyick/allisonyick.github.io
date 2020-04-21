@@ -233,3 +233,64 @@ a {
   padding: 0.5vw;
   transition: 0.5s ease-in-out;
 }
+
+@media (max-width: 800px) {
+  body {
+    overflow-y: visible;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .note, .heading, .name, {
+    font-size: 2rem;
+  }
+  .homepage-links {
+    font-size: 2rem;
+    position: absolute;
+    top: 60vh;
+    padding: 2vw;
+    line-height: 4rem;
+  }
+  .instruction-head{
+    position: sticky;
+    top: 50vh;
+  }
+  .body-text{
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .container{
+    display: flex;
+    padding: 1vw;
+    flex-direction: column;
+  }
+  .random{
+    font-size: 1rem;
+    position: relative;
+    top: 3rem;
+    right: 2.5rem;
+  }
+  .left {
+    border: none;
+    width: 100%;
+    height: 50vh;
+    position: sticky;
+    top: 0;
+  }
+  .right {
+    width: 100%;
+    height: 50vh;
+  }
+  .next {
+    width: 0;
+    height: 0;
+    border-bottom: 5rem solid black;
+    border-left: 5rem solid transparent;
+    z-index: 3;
+    position: sticky;
+    bottom: 2vw;
+    margin-left: 80%;
+    margin-right: 10%;
+    cursor: pointer;
+  }
+}
