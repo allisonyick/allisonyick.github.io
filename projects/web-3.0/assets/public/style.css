@@ -1,0 +1,145 @@
+/* styles */
+/* called by your view template */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: acumin-pro, sans-serif;
+  width: 98vw;
+  height: 96vh;
+  margin: 1vw;
+  padding: 2vw;
+  border: 0.3vw solid black;
+  overflow: hidden;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.col {
+  width: 100%;
+}
+
+.add {
+  text-align: left;
+  font-size: 2vw;
+}
+
+/* .add-text {
+  font-size: 2vw;
+  text-align: center;
+  border: 0.3vw solid black;
+  max-width: 12vw;
+  z-index: 2;
+} */
+
+.key {
+  text-align: right;
+  font-size: 2vw;
+}
+
+.key-content {
+  text-align: left;
+  float: right;
+  font-size: 1.5vw;
+  display: block;
+  padding: 1vw;
+  width: 100%;
+  border: 0.3vw solid black;
+  max-width: 17vw;
+  line-height: 2vw;
+}
+
+.view-key:hover, .add-text:hover, .about:hover {
+  cursor: pointer;
+  text-align: center;
+  max-width: 11vw;
+  border: 0.2vw solid black;
+}
+
+.box-af {display: inline-block; width: 2vw; height: 1.2vw; background-color: #FCB17D; border: 0.2vw solid black;}
+.box-an {display: inline-block; width: 2vw; height: 1.2vw; background-color: #81DCF3; border: 0.2vw solid black;}
+.box-as {display: inline-block; width: 2vw; height: 1.2vw; background-color: #FCE67D; border: 0.2vw solid black;}
+.box-au {display: inline-block; width: 2vw; height: 1.2vw; background-color: #7DB9FC; border: 0.2vw solid black;}
+.box-e {display: inline-block; width: 2vw; height: 1.2vw; background-color: #DA99FF; border: 0.2vw solid black;}
+.box-na {display: inline-block; width: 2vw; height: 1.2vw; background-color: #FC7D7D; border: 0.2vw solid black;}
+.box-sa {display: inline-block; width: 2vw; height: 1.2vw; background-color: #70E69A; border: 0.2vw solid black;}
+
+p {
+  font-size: 1vw;
+}
+
+form {
+  margin-bottom: 0.5vw;
+  padding: 1vw;
+  display: inline-block;
+  border: 0.3vw solid black;
+  width: 100%;
+  max-width: 20vw;
+}
+
+input {
+  display: block;
+  margin-bottom: 0.5vw;
+  padding: 0.5vw;
+  width: 100%;
+  border: none;
+  border-bottom: 0.2vw solid black;
+  font-size: 1vw;
+}
+
+button {
+  font-size: 1vw;
+  border: 0.2vw solid black;
+  padding: 0.3vw;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0.2vw 0.2vw black;
+  transition: 0.2s ease;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.reset {
+  position: fixed;
+  bottom: 3vw;
+  font-size: 1vw;
+  padding: 0.3vw;
+  border: 0.2vw solid black;
+}
+
+.reset:hover{
+  box-shadow: 0.2vw 0.2vw black;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.about {
+  text-align: center;
+  position: fixed;
+  bottom: 3vw;
+  right: 2.5vw;
+  align-self: flex-end;
+  padding: 0.3vw;
+  max-width: 12vw;
+  font-size: 1.5vw;
+}
+
+.item {
+  border: 0.2vw solid black;
+  padding: 0.2vw;
+  width: fit-content; 
+}

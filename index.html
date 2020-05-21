@@ -100,7 +100,7 @@
 
     var typed = new Typed('.type', {
       strings: [
-      'Hi, my name is Allison',
+      'Hi, my name is Allison Yick',
       'Welcome to my site for Core Interaction at Parsons',
       'I am a Designer from Toronto, Canada',
       ],
@@ -133,9 +133,8 @@
 
     $("a").hover(function(){
       console.log("hehehe");
-      $("body").css("background-color", "floralwhite");
       $(this).css("color", "IndianRed");
-      $("h2").css("display", "none");
+      $("h2").css("opacity", "0");
       $("img").css("transition", "2s ease-in-out");
       $("body").css("transition", "1s ease-in-out");
       $(this).css("transition", "1s ease-in-out");
@@ -143,7 +142,7 @@
       }, function(){
       $("body").css("background-color", "black");
       $(this).css("color", "floralwhite");
-      $("h2").css("display", "block");
+      $("h2").css("opacity", "1");
     });
 
     $(document).mousemove(function(e){
